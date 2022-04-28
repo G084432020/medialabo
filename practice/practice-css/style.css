@@ -2,7 +2,7 @@
 
 html {
   font-family: 'Helvetica neue', Arial, 'sans serif';
-  font-size: 10px;
+  font-size: 12px;
 }
 
 body {
@@ -20,27 +20,33 @@ h2 {
   font-size: 3.2em;
 }
 
-pli {
+p,li {
   font-size: 1.7em;
+}
+
+div{
+    font-size: 1.7em;
+    margin-right: 280px;
+    word-break: break-word;
 }
 
 /*+++ more specific section styles +++*/
 
 /* header and footer */
 
-header, footer {
-  background-colour: teal;
+header,footer {
+  background-color: teal;
   height: 10em;
   padding: 2em;
 }
 
 h1, footer p {
-  margin: -70px;
+  margin: 0px;
 }
 
 h1 {
   text-align: center;
-  padding: 0.5em 0;
+  padding: 30px;
 }
 
 /* main content */
@@ -54,6 +60,6 @@ main p, main li {
 }
 
 img {
-  float: right
-  margin: 1.2em 2em;
+  float: right;
+  margin-right: 20px;
 }
