@@ -21,11 +21,11 @@ function hantei() {
     console.log(kaisu + "回目の予想：" + yoso);
     if (yoso === kotae){
         console.log("正解です。おめでとう!");
-    } else if(kaisu === 3){
+    } else if(kaisu === 3 && kaisu < 4){
         console.log("まちがい。残念でした答えは" + kotae + "です。");
-    } else if(kotae > yoso){
+    } else if(kotae > yoso && kaisu < 4){
         console.log("まちがい。答えはもっと大きいですよ");
-    } else if(kotae < yoso){
+    } else if(kotae < yoso && kaisu < 4){
         console.log("まちがい。答えはもっと小さいですよ");
     } 
 }
