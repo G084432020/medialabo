@@ -1,0 +1,65 @@
+/* General styles */
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 12px;
+}
+
+body {
+  width: 80em;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3.2em;
+}
+
+p,li {
+  font-size: 1.7em;
+}
+
+div{
+    font-size: 1.7em;
+    margin-right: 280px;
+    word-break: break-word;
+}
+
+/*+++ more specific section styles +++*/
+
+/* header and footer */
+
+header,footer {
+  background-color: teal;
+  height: 10em;
+  padding: 2em;
+}
+
+h1, footer p {
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+/* main content */
+
+main {
+  padding: 2em;
+}
+
+main p, main li {
+  line-height: 2;
+}
+
+img {
+  float: right;
+  margin-right: 20px;
+}
