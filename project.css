@@ -6,6 +6,7 @@ html {
 body {
     width: 100em;
     margin: 0 auto;
+    background-color: aqua;
 }
 
 header,footer {
