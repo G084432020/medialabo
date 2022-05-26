@@ -1,0 +1,15 @@
+html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 12px;
+}
+
+body {
+    width: 100em;
+    margin: 0 auto;
+}
+
+header,footer {
+    background-color: rgb(236, 143, 3);
+    height: 10em;
+    padding: 2em;
+}
