@@ -31,12 +31,15 @@ ul = document.createElement('ul');
 
 // ul 要素を h2sevenOcean の次に追加する（次の行を書く）
 
-ul.insertAdjacentElement('afterend', h2sevenOcean);
+ul.insertAdjacentElement('afterend', ul);
 
 // ul に7つの大陸を追加する
 for (let o of oceans) {
   // （この中を完成させる）
-  o.insertAdjacentElement('afterend', ul);
+    li = document.createElement('li');
+    li.textContent = o;
+    ul.insertAdjacentElement('beforeend', li);
+    console.log(o);
 
 }
 
