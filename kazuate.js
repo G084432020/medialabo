@@ -26,14 +26,16 @@ function hantei() {
     pp.insertAdjacentElement('afterend',p);
 
     kaisu++;
-    if (kaisu<=3) {
-        p2.textContent = kaisu+'回目の予想: '+math+' ';
-        if (math<kotae) {
-            p.textContent = 'まちがい．答えはもっと大きいですよ';
-        } else if (math>kotae) {
-            p.textContent ='まちがい．答えはもっと小さいですよ';
-        } else if (math==kotae) {
-            p.textContent ='正解です．おめでとう!';
+    if (kaisu != 0){
+        if (kaisu<=3) {
+            p2.textContent = kaisu+'回目の予想: '+math+' ';
+            if (math<kotae) {
+                p.textContent = 'まちがい．答えはもっと大きいですよ';
+            } else if (math>kotae) {
+                p.textContent ='まちがい．答えはもっと小さいですよ';
+            } else if (math==kotae) {
+                p.textContent ='正解です．おめでとう!';
+            }
         }
     }
 
