@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Projects</title>
     <link rel="stylesheet" href="project.css">
-    <script src="weather.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="project.js" defer></script>
   </head>
 
   <body>
@@ -16,26 +17,45 @@
 
     <h2>世界の天気</h2>
 
-    <p>現在の天気</p>
-    <table>
+    <p>現在の天気 : 都市名をクリックすると情報が見られます</p>
+
+    <table id="tbl">
       <colgroup span="4"></colgroup>
       <tr>
-       <th>都市</th>
-       <th>天気</th>
-       <th>最高気温</th>
-       <th>最低気温</th>
+        <th scope="col">都市</th>
+        <th scope="col">天気</th>
+        <th scope="col">最高気温</th>
+        <th scope="col">最低気温</th>
      </tr>
      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-       <td></td>
+        <th scope="row"><input type="button" class="city" id="Tokyo" value="東京"></th>
+        <td id="weatherTokyo">？？？</td>
+        <td id="maxTokyo">？？？</td>
+        <td id="minTokyo">？？？</td>
      </tr>
      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <th scope="row"><input type="button" class="city" id="Moscow" value="モスクワ"></th>
+        <td id="weatherMoscow">？？？</td>
+        <td id="maxMoscow">？？？</td>
+        <td id="minMoscow">？？？</td>
+      </tr>
+      <tr>
+        <th scope="row"><input type="button" class="city" id="New-York" value="ニューヨーク"></th>
+        <td id="weatherNew-York">？？？</td>
+        <td id="maxNew-York">？？？</td>
+        <td id="minNew-York">？？？</td>
+      </tr>
+      <tr>
+        <th scope="row"><input type="button" class="city" id="Sydney" value="シドニー"></th>
+        <td id="weatherSydney">？？？</td>
+        <td id="maxSydney">？？？</td>
+        <td id="minSydney">？？？</td>
+      </tr>
+      <tr>
+        <th scope="row"><input type="button" class="city" id="London" value="ロンドン"></th>
+        <td id="weatherLondon">？？？</td>
+        <td id="maxLondon">？？？</td>
+        <td id="minLondon">？？？</td>
       </tr>
     </table>
 
